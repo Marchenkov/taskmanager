@@ -12,10 +12,9 @@ const taskSchema = mongoose.Schema({
     createBy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
-    },
-    
+    },    
 });
 
 const User = mongoose.model('Task', taskSchema);
 
-module.exports = User;
+export default User;
